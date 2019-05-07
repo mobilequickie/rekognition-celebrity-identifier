@@ -1,0 +1,1 @@
+### iOS Swift app for Amazon Rekognition ###
