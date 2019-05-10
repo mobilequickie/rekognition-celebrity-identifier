@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,56 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Celebrity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="celebrities.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="za8-I5-npl">
+                                <rect key="frame" x="0.0" y="29" width="375" height="618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZu-My-ehJ">
+                                <rect key="frame" x="94" y="535" width="97" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="CVR-MT-tLF"/>
+                                </constraints>
+                                <state key="normal" image="PhotoLibraryIcon"/>
+                                <connections>
+                                    <action selector="PhotoLibraryOpen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9dR-LV-znJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ve9-e9-jzz">
+                                <rect key="frame" x="199" y="535" width="84" height="80"/>
+                                <state key="normal" image="CameraIcon"/>
+                                <connections>
+                                    <action selector="CameraOpen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="57s-ri-SJ8"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nZu-My-ehJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="Cv3-PM-7qh"/>
+                            <constraint firstItem="nZu-My-ehJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="515" id="H7p-2m-MSU"/>
+                            <constraint firstItem="ve9-e9-jzz" firstAttribute="leading" secondItem="nZu-My-ehJ" secondAttribute="trailing" constant="8" symbolic="YES" id="MNP-B5-Gdw"/>
+                            <constraint firstItem="ve9-e9-jzz" firstAttribute="top" secondItem="nZu-My-ehJ" secondAttribute="top" id="Zo1-rT-A0I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ve9-e9-jzz" secondAttribute="trailing" constant="92" id="dY1-FI-hqc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="CelebrityImageView" destination="za8-I5-npl" id="5gb-jE-n4U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CameraIcon" width="80" height="80"/>
+        <image name="PhotoLibraryIcon" width="80" height="80"/>
+        <image name="celebrities.png" width="1078" height="763"/>
+    </resources>
 </document>

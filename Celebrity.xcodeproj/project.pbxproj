@@ -8,17 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		864EFDD73352626D7CD53376 /* Pods_Celebrity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD6811DE82C7E40B922FC3A /* Pods_Celebrity.framework */; };
+		F036C0302284FEEA00F791F8 /* celebrities.png in Resources */ = {isa = PBXBuildFile; fileRef = F036C02F2284FEEA00F791F8 /* celebrities.png */; };
+		F036C03222852EB900F791F8 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = F036C03122852EB900F791F8 /* awsconfiguration.json */; };
 		F093A8592281098D006BAFF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F093A8582281098D006BAFF9 /* AppDelegate.swift */; };
 		F093A85B2281098D006BAFF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F093A85A2281098D006BAFF9 /* ViewController.swift */; };
 		F093A85E2281098D006BAFF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F093A85C2281098D006BAFF9 /* Main.storyboard */; };
 		F093A8602281098E006BAFF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F093A85F2281098E006BAFF9 /* Assets.xcassets */; };
 		F093A8632281098E006BAFF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F093A8612281098E006BAFF9 /* LaunchScreen.storyboard */; };
+		F0E780EF2284EAE9007D37F9 /* Celebrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E780EE2284EAE9007D37F9 /* Celebrity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1CEBFB83B0FAB72BAC791412 /* Pods-Celebrity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Celebrity.release.xcconfig"; path = "Target Support Files/Pods-Celebrity/Pods-Celebrity.release.xcconfig"; sourceTree = "<group>"; };
 		56083A30D5261C4947141C15 /* Pods-Celebrity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Celebrity.debug.xcconfig"; path = "Target Support Files/Pods-Celebrity/Pods-Celebrity.debug.xcconfig"; sourceTree = "<group>"; };
 		5AD6811DE82C7E40B922FC3A /* Pods_Celebrity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Celebrity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F036C02F2284FEEA00F791F8 /* celebrities.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = celebrities.png; sourceTree = "<group>"; };
+		F036C03122852EB900F791F8 /* awsconfiguration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		F093A8552281098D006BAFF9 /* Celebrity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Celebrity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F093A8582281098D006BAFF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F093A85A2281098D006BAFF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		F093A85F2281098E006BAFF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F093A8622281098E006BAFF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F093A8642281098E006BAFF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0E780EE2284EAE9007D37F9 /* Celebrity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celebrity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +67,15 @@
 		F093A8572281098D006BAFF9 /* Celebrity */ = {
 			isa = PBXGroup;
 			children = (
+				F036C02F2284FEEA00F791F8 /* celebrities.png */,
 				F093A8582281098D006BAFF9 /* AppDelegate.swift */,
 				F093A85A2281098D006BAFF9 /* ViewController.swift */,
 				F093A85C2281098D006BAFF9 /* Main.storyboard */,
 				F093A85F2281098E006BAFF9 /* Assets.xcassets */,
 				F093A8612281098E006BAFF9 /* LaunchScreen.storyboard */,
 				F093A8642281098E006BAFF9 /* Info.plist */,
+				F0E780EE2284EAE9007D37F9 /* Celebrity.swift */,
+				F036C03122852EB900F791F8 /* awsconfiguration.json */,
 			);
 			path = Celebrity;
 			sourceTree = "<group>";
@@ -77,7 +86,6 @@
 				56083A30D5261C4947141C15 /* Pods-Celebrity.debug.xcconfig */,
 				1CEBFB83B0FAB72BAC791412 /* Pods-Celebrity.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -149,7 +157,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F036C03222852EB900F791F8 /* awsconfiguration.json in Resources */,
 				F093A8632281098E006BAFF9 /* LaunchScreen.storyboard in Resources */,
+				F036C0302284FEEA00F791F8 /* celebrities.png in Resources */,
 				F093A8602281098E006BAFF9 /* Assets.xcassets in Resources */,
 				F093A85E2281098D006BAFF9 /* Main.storyboard in Resources */,
 			);
@@ -211,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0E780EF2284EAE9007D37F9 /* Celebrity.swift in Sources */,
 				F093A85B2281098D006BAFF9 /* ViewController.swift in Sources */,
 				F093A8592281098D006BAFF9 /* AppDelegate.swift in Sources */,
 			);
